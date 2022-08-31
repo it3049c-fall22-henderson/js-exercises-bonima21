@@ -28,8 +28,8 @@ function filterOut(arr, item) {
 
 // Append: you should be able to add an item to the end of an array
 function append(arr, item) {
-const newItem=arr.push(item);
-return newItem;
+arr.push(item);
+return arr;
 }
 
 
@@ -40,23 +40,23 @@ function truncate(arr) {
   
 }
 
-// Concat: you should be able to join together two arrays
+
 function concat(arr1, arr2) {
-  return ;
+  const combine=arr1.concat(arr2);
+  return combine ;
 }
 
-// Insert: you should be able to add an item at the specified index of an array
-// hint: use splice and pay attention to the return value
+
 function insert(arr, item, index) {
-
-  return ;
+arr.splice(index,0,item);
+  return arr;
 }
 
-// Square: you should be able to square each number in an array
-// hint: use .map
+
 // Example: [1,2,4,5] => [1,4,16,25]
 function square(arr) {
-  return ;
+  let result=arr.map(x=> x** 2);
+  return result;
 }
 
 module.exports = {
