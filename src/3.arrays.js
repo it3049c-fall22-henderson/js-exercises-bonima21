@@ -9,28 +9,35 @@ function indexOf(arr, item) {
   return arr.indexOf(item) ;
 }
 
-// Sum: you should be able to sum the items of an array
-// Example: arr = [1,2,3]   =>  6
+
 function sum(arr) {
-  return ;
+  let s=0;
+  for (let i=0; i <arr.length; i+= 1){
+    s += arr[i];
+  }
+  return s ;
 }
 
-// Filter: Should filter out all instances of a value from an array
-// Example: filtering 2 out of [1,2,3,5,6,2,4,2] should return [1,3,5,6,4]
+
 function filterOut(arr, item) {
-  return ;
+  const result = arr.filter(function(x){
+    return x !==item;
+  });
+  return result;
 }
 
 // Append: you should be able to add an item to the end of an array
 function append(arr, item) {
-
-  return ;
+const newItem=arr.push(item);
+return newItem;
 }
 
-// Truncate: you should be able to remove the last item of an array
-// hint: pop, slice, splice would all work. Pay attention to the return value in the docs
+
+
 function truncate(arr) {
-  return ;
+  arr.splice(-1,1);
+  return arr;
+  
 }
 
 // Concat: you should be able to join together two arrays
