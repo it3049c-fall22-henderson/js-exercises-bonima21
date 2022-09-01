@@ -26,7 +26,6 @@ function filterOut(arr, item) {
   return result;
 }
 
-// Append: you should be able to add an item to the end of an array
 function append(arr, item) {
 arr.push(item);
 return arr;
